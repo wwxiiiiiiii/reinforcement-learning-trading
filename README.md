@@ -5,9 +5,11 @@ A reinforcement learning project for portfolio management using Soft Actor-Criti
 
 ## Project Overview
 
-This project develops an automated stock trading agent using reinforcement learning. Rather than maximizing performance on a single evaluation period, the primary objective was to improve the model's generalization ability so that it performs consistently under different market environments.
+This project develops an automated stock trading agent using reinforcement learning.
 
-The final model was implemented using the Soft Actor-Critic (SAC) algorithm and trained with Stable-Baselines3.
+Instead of maximizing performance on a single evaluation period, the primary objective was to improve the model's generalization ability so that it performs consistently across different market environments.
+
+The final model was implemented using the Soft Actor-Critic (SAC) algorithm with Stable-Baselines3.
 
 ---
 
@@ -82,12 +84,12 @@ Instead of optimizing for a single test period, the model was validated across v
 
 ## Results
 
-Compared with the initial baseline model, the final SAC agent demonstrated:
+Compared with the initial PPO baseline, the final SAC agent demonstrated:
 
-- Improved cumulative return
-- Higher risk-adjusted performance
-- More consistent performance across different evaluation periods
-- Better generalization to unseen market conditions
+- Higher cumulative returns
+- Improved risk-adjusted performance (Sharpe Ratio)
+- More stable performance across multiple unseen market periods
+- Better generalization through systematic hyperparameter optimization
 
 ---
 
@@ -105,27 +107,15 @@ Compared with the initial baseline model, the final SAC agent demonstrated:
 ## Repository Structure
 
 ```
-rl-trading-agent/
+reinforcement-learning-trading/
 │
 ├── README.md
 ├── train_sac.py
 ├── submission.py
 ├── metadata.json
-└── requirements.txt
+├── requirements.txt
+└── LICENSE
 ```
-
----
-
-## Experimental Result
-
-Compared with the initial PPO baseline, the final SAC model achieved substantially better performance across multiple unseen market periods.
-
-Evaluation Metrics
-- Cumulative Return
-- Sharpe Ratio
-- Maximum Drawdown
-
-The final model consistently improved both cumulative return and risk-adjusted performance after extensive hyperparameter tuning and robustness validation.
 
 ---
 
