@@ -110,8 +110,8 @@ rl-trading-agent/
 ├── README.md
 ├── train_sac.py
 ├── submission.py
-├── requirements.txt
-└── saved_agent.zip
+├── metadata.json
+└── requirements.txt
 ```
 
 ---
