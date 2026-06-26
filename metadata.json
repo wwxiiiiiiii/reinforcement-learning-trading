@@ -1,0 +1,19 @@
+{
+  "agent_name": "SAC_MLP_256x256",
+  "algorithm": "SAC",
+  "policy": "MlpPolicy",
+  "policy_net_arch": [256, 256],
+  "activation_fn": "ReLU",
+  "train_start_date": "2013-01-01",
+  "train_end_date": "2018-12-31",
+  "total_timesteps": 1250000,
+  "learning_rate": 3e-4,
+  "batch_size": 512,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "ent_coef": "auto",
+  "buffer_size": 100000,
+  "seed": 0,
+  "framework": "sb3-contrib",
+  "description": "SAC agent with a 256x256 MLP policy network trained on the FinRL stock trading environment. The model uses automatic entropy tuning, batch size 512, and gamma 0.99. Starting from a 1M-step checkpoint, additional training was performed to reach approximately 1.25M total timesteps. This configuration achieved the best validation cumulative return among the tested SAC variants."
+}
