@@ -116,6 +116,19 @@ rl-trading-agent/
 
 ---
 
+## Experimental Result
+
+Compared with the initial PPO baseline, the final SAC model achieved substantially better performance across multiple unseen market periods.
+
+Evaluation Metrics
+- Cumulative Return
+- Sharpe Ratio
+- Maximum Drawdown
+
+The final model consistently improved both cumulative return and risk-adjusted performance after extensive hyperparameter tuning and robustness validation.
+
+---
+
 ## Author
 
 **Mijin Son**
